@@ -1,0 +1,76 @@
+body, html {
+  font-family: $roboto-font;
+  background-color: $off-white;
+  height: 100%;
+  background-image: url(http://dennisbrotzky.me/img/ebay-background.jpg);
+}
+
+.introduction {
+  height: 100%;
+  background-color:#fff;
+}
+.navigation {
+  position: fixed;
+  z-index: 9999;
+  height: 80px;
+  width: 100%;
+  padding: 20px 15px;
+  box-shadow: none;
+  background-color: $red;
+}
+.navigation > ul > li {
+  float: right;
+  padding: 0px  20px;
+  list-style: none;
+  display: inline;
+  line-height: 2.1;
+  text-decoration: none;
+  font-size: $large-font-size;
+  color: $off-white;
+}
+.navigation > ul > li:nth-child(1) {
+  border-left: 2px solid rgba(255,255,255,0.3);
+}
+.logo-holder {
+  float: left;
+  position: relative;
+  top: 3px;
+  margin: 0 auto 0 25px;
+  font-size: $header-font-size;
+  font-weight: $bold;
+  color: $off-white;
+}
+.shadow {
+  box-shadow: $nav-shadow;
+}
+
+@media all and (max-width: 680px) {
+  .navigation {
+    height: 80px;
+  }
+  .logo-holder {
+    float: none;
+    display: block;
+    top: -5px;
+    font-size: $header-font-size;
+  }
+   .navigation > ul  {
+    margin-top: 0px;
+    margin: 5px 20px 0 20px;
+   }
+  .navigation > ul > li {
+    float: none;
+    display: inline;
+    font-size: $main-font-size;
+    width: 100%;
+    margin: none;
+    padding: 0px 5px;
+    line-height: 1;
+    font-style: italic;
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+  .navigation > ul > li:nth-child(1) {
+    border: none
+  }
+}
