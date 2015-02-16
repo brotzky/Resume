@@ -53,12 +53,14 @@ table {
 
 a {
   text-decoration: none;
-  color: #f9f9f9;
+  color: inherit;
 }
 
 body, html {
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
   background-color: #f9f9f9;
+  height: 100%;
+  background-image: url(http://dennisbrotzky.me/img/ebay-background.jpg);
 }
 
 .introduction {
@@ -73,19 +75,22 @@ body, html {
   width: 100%;
   padding: 20px 15px;
   box-shadow: none;
-  background-color: #C62828;
+  background-color: #F44336;
 }
 
 .navigation > ul > li {
   float: right;
-  margin: 0 auto;
-  margin-right: 30px;
+  padding: 0px  20px;
   list-style: none;
   display: inline;
   line-height: 2.1;
   text-decoration: none;
   font-size: 1.2em;
   color: #f9f9f9;
+}
+
+.navigation > ul > li:nth-child(1) {
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .logo-holder {
@@ -102,17 +107,166 @@ body, html {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-.contact-me {
+@media all and (max-width: 680px) {
+  .navigation {
+    height: 80px;
+  }
+
+  .logo-holder {
+    float: none;
+    display: block;
+    top: -5px;
+    font-size: 2em;
+  }
+
+  .navigation > ul {
+    margin-top: 0px;
+    margin: 5px 20px 0 20px;
+  }
+
+  .navigation > ul > li {
+    float: none;
+    display: inline;
+    font-size: 1em;
+    width: 100%;
+    margin: none;
+    padding: 0px 5px;
+    line-height: 1;
+    font-style: italic;
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+
+  .navigation > ul > li:nth-child(1) {
+    border: none;
+  }
+}
+.card {
   position: relative;
   margin: 0 auto;
-  top: 120px;
-  width: 60%;
-  height: 200px;
+  padding: 10px 20px 30px;
+  top: 105px;
+  width: 50%;
+  height: 100%;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 4px;
   box-shadow: 0px 1px 0.5px #DDD;
+}
+
+@media all and (max-width: 900px) {
+  .card {
+    width: 80%;
+  }
+}
+@media all and (max-width: 450px) {
+  .card {
+    width: 95%;
+  }
+}
+.card-top {
+  padding: 5px 15px;
+  border-bottom: 2px solid #CFD8DC;
+}
+
+.icon {
+  display: inline-block;
+  color: #37474F;
+}
+
+.hr-divider {
+  position: relative;
+  margin: 30px auto 10px auto;
+  width: 90%;
+  height: 2px;
+  top: 15px;
+  background-color: #90A4AE;
+  border: none;
+  opacity: 0.4;
+}
+
+h2 {
+  font-size: 1.4em;
+  display: inline;
+  margin: auto 10px;
+  width: 100%;
+  color: #37474F;
+}
+
+h3 {
+  margin: 14px auto 7px;
+  color: #37474F;
+}
+
+.card-content {
+  padding: 10px 0px 5px;
+  margin-left: 55px;
+}
+
+.card-col-25 {
+  color: #607D8B;
+  float: left;
+  width: 25%;
+}
+
+.card-col-50 {
+  color: #607D8B;
+  float: left;
+  width: 50%;
+}
+
+.card-col-75 {
+  color: #607D8B;
+  float: left;
+  width: 75%;
+}
+
+.card-col-100 {
+  color: #607D8B;
+  float: left;
+  width: 100%;
+}
+
+.block {
+  display: block;
+}
+
+p {
+  display: inline-block;
+  color: #90A4AE;
+  cursor: default;
+  line-height: 1.25;
+}
+
+a {
+  transition: all 200ms ease-out;
+}
+a:hover {
+  color: #607D8B;
+}
+
+.mrgn-top {
+  margin-top: 120px;
+}
+
+.mrgn-btm {
+  margin-bottom: 25px;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.font-plus {
+  font-size: 1.2em;
+}
+
+.faded {
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=style.css.map */

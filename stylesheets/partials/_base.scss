@@ -1,12 +1,116 @@
-.contact-me {
+
+.card {
   position: relative;
   margin: $center;
-  top: 120px;
-  width: 60%;
-  height: 200px;
+  padding: 10px 20px 30px;
+  top: 105px;
+  width: 50%;
+  height: 100%;
   background-color: $white;
   border: $border-solid-side;
   border-bottom: $border-solid;
   border-radius: $radius;
   box-shadow: $card-shadow;
+}
+
+@media all and (max-width: 900px) {
+  .card {
+    width: 80%;
+  }
+}
+@media all and (max-width: 450px) {
+  .card {
+    width: 95%;
+  }
+}
+
+.card-top {
+  padding: 5px 15px;
+  border-bottom: 2px solid #CFD8DC;
+}
+.icon {
+  display: inline-block;
+  color: $dark-grey;
+}
+.hr-divider {
+  position: relative;
+  margin: 30px auto 10px auto;
+  width: 90%;
+  height: 2px;
+  top: 15px;
+  background-color: $muted-grey;
+  border: none;
+  opacity: 0.4;
+}
+h2 {
+  font-size: 1.4em;
+  display: inline;
+  margin: auto 10px;
+  width: 100%;
+  color: $dark-grey;
+}
+h3  {
+  margin: 14px auto 7px;
+  color: $dark-grey;
+}
+.card-content {
+  padding: 10px 0px 5px;
+  margin-left: 55px;
+}
+.card-col-25 {
+  color: $grey;
+  float: left;
+  width: 25%;
+}
+.card-col-50 {
+  color: $grey;
+  float: left;
+  width: 50%;
+}
+.card-col-75 {
+  color: $grey;
+  float: left;
+  width: 75%;
+}
+.card-col-100 {
+  color: $grey;
+  float: left;
+  width: 100%;
+}
+
+.block {
+  display: block;
+}
+
+p {
+  display: inline-block;
+  color: $muted-grey;
+  cursor: default;
+  line-height: 1.25;
+}
+a {
+  transition: all 200ms ease-out;
+  &:hover {
+    color: $grey;
+  }
+}
+.mrgn-top {
+  margin-top: 120px;
+}
+.mrgn-btm {
+  margin-bottom: 25px;
+}
+
+.clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.font-plus {
+  font-size: 1.2em;
+}
+.faded {
+  opacity: 0.6;
 }
