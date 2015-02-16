@@ -13,24 +13,13 @@
   box-shadow: $card-shadow;
 }
 
-@media all and (max-width: 900px) {
-  .card {
-    width: 80%;
-  }
-}
-@media all and (max-width: 450px) {
-  .card {
-    width: 95%;
-  }
-}
-
 .card-top {
   padding: 5px 15px;
   border-bottom: 2px solid #CFD8DC;
 }
 .icon {
   display: inline-block;
-  color: $dark-grey;
+  color: #263238;
 }
 .hr-divider {
   position: relative;
@@ -47,7 +36,7 @@ h2 {
   display: inline;
   margin: auto 10px;
   width: 100%;
-  color: $dark-grey;
+  color: #263238;
 }
 h3  {
   margin: 14px auto 7px;
@@ -107,10 +96,43 @@ a {
    height: 0;
    clear: both;
 }
-
 .font-plus {
   font-size: 1.2em;
 }
 .faded {
   opacity: 0.6;
+}
+
+@media all and (max-width: 1000px) {
+  .card {
+    width: 80%;
+  }
+}
+@media all and (max-width: 600px) {
+  .card-content {
+    margin-left: 15px;
+  }
+}
+@media all and (max-width: 450px) {
+  .card {
+    width: 95%;
+  }
+  .card-content {
+    margin-left: 5px;
+  }
+  p, a {
+    font-size: 0.9em;
+  }
+  .card-col-50 {
+    width: 100%;
+  }
+  .card-col-25 {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  .font-plus {
+    font-size: 1.125rem;
+  }
 }
