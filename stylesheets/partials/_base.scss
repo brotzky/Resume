@@ -1,1 +1,49 @@
-$nav-shadow: box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+$nav-shadow:  0 2px 5px rgba(0,0,0,0.26);
+$roboto-font: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+$main-font-size: 1em;
+$large-font-size: 1.2em;
+$header-font-size: 2em;
+$blue-grey: #607D8B;
+$muted-grey: #90A4AE;
+$dark-grey: #263238;
+$off-white: #f9f9f9;
+$center: 0 auto;
+$bold: 500;
+
+body, html {
+  font-family: $roboto-font;
+  background-color: #f1f1f1;
+}
+
+.introduction {
+  height: 100%;
+  background-color:#fff;
+}
+.navigation {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  padding: 20px 15px;
+  box-shadow: $nav-shadow;
+  background-color: $blue-grey;
+}
+.navigation > ul > li {
+  float: right;
+  margin: 0 auto;
+  margin-right: 30px;
+  list-style: none;
+  display: inline;
+  line-height: 2.1;
+  text-decoration: none;
+  font-size: $large-font-size;
+  color: $off-white;
+}
+.logo-holder {
+  float: left;
+  position: relative;
+  top: 3px;
+  margin: 0 auto 0 25px;
+  font-size: $header-font-size;
+  font-weight: $bold;
+  color: $off-white;
+}
