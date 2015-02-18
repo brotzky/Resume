@@ -136,3 +136,37 @@ a {
     font-size: 1.125rem;
   }
 }
+
+
+.return-home {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: $red;
+  border-bottom: 2px solid $dark-red;
+  border-right: 2px solid $dark-red;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.return-home:hover {
+  transform: scale(1.125);
+}
+.return-home-text {
+  position: relative;
+  top: 13px;
+  left: 5px;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: $off-white;
+}
+.return-home-text:hover {
+  color: $off-white;
+}
