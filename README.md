@@ -11,3 +11,6 @@ Finished Product
 
 The finished resume is quite simple and uses simple cards with red and blue-grey
 coloring. Overall, it's a clean presentation of my resume. 
+
+
+visit at www.dennisbrotzky.me/resume
