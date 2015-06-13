@@ -55,7 +55,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.fa {
 
+}
 body, html {
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
   background-color: #f9f9f9;
@@ -89,8 +91,8 @@ body, html {
   color: #f9f9f9;
 }
 
-.navigation > ul > li:nth-child(1) {
-  border-left: 2px solid rgba(255, 255, 255, 0.3);
+.work-date {
+  opacity: 0.65;
 }
 
 .logo-holder {
@@ -157,7 +159,7 @@ body, html {
 }
 
 .card-top {
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-bottom: 2px solid #CFD8DC;
 }
 
@@ -168,7 +170,7 @@ body, html {
 
 .hr-divider {
   position: relative;
-  margin: 30px auto 10px auto;
+  margin: 20px auto;
   width: 90%;
   height: 2px;
   top: 15px;
@@ -191,8 +193,9 @@ h3 {
 }
 
 .card-content {
-  padding: 10px 0px 5px;
-  margin-left: 55px;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 55px 5px;
 }
 
 .card-col-25 {
@@ -225,9 +228,10 @@ h3 {
 
 p {
   display: inline-block;
-  color: #859197;
+  color: #666F74;
   cursor: default;
-  line-height: 1.25;
+  line-height: 1.35;
+  margin:5px 0 7px;
 }
 
 a {
@@ -253,11 +257,14 @@ a:hover {
 }
 
 .font-plus {
-  font-size: 1.2em;
+  font-size: 1.4em;
+  font-weight: 500;
 }
-
+.written-description {
+    margin: 5px 25px;
+}
 .faded {
-  opacity: 0.6;
+  opacity: 0.88;
 }
 
 @media all and (max-width: 1000px) {
@@ -268,6 +275,12 @@ a:hover {
 @media all and (max-width: 600px) {
   .card-content {
     margin-left: 15px;
+  }
+  .written-description {
+      margin: 3px 0px;
+  }
+  .card-content {
+    padding: 10px 5px 5px;
   }
 }
 @media all and (max-width: 450px) {
